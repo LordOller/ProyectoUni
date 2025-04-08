@@ -1,0 +1,95 @@
+:root{
+    --Primario: #4c1d3d;
+    --primarioMasClaro: #852e4e;
+    --Secundario:#A33757;
+    --SecundarioMasClaro:#dc586D;
+    --Negro: #000;
+    --blanco: #fff; 
+    --fuentePrincipal:"Poppins", sans-serif;
+}
+
+
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+
+/** Globales **/
+
+body{
+  background-color: var(--Primario);
+}
+
+img{
+  max-width: 100%;
+}
+
+a{
+  text-decoration: none;
+}
+
+h1,h2,h3{
+  text-align: center;
+  font-family: var(--fuentePrincipal);
+}
+
+h1{
+  font-size: 3.8rem;
+}
+
+h2{
+  font-size: 2.8rem;
+}
+
+h3{
+  font-size: 1.8rem;
+}
+
+p{
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.contenedor{
+  max-width: 10rem;
+  margin: 0 auto;
+}
+
+/*Fin globales*/
+
+.header{
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--primarioMasClaro);
+  margin-top: 2rem;
+}
+
+.header__navegacion{
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  background-color: var(--SecundarioMasClaro);
+  border-radius: 1rem;
+  margin: 2rem;
+  padding: 0 2rem;
+}
+
+.header__navegacion--enlaces{
+  color: var(--Negro);
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-family: var(--fuentePrincipal);
+}
+
+.header__navegacion--enlaces:hover{
+  color: var(--Primario);
+}
+
+
+
